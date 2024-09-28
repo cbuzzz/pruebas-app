@@ -9,5 +9,25 @@ import { RouterOutlet } from '@angular/router';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'pruebas-app';
+  title = 'pruebas-app EA mola';
+  lista = []
+  items =[
+    { title: 'Explore the Docs', link: 'https://angular.dev' },
+    { title: 'Learn with Tutorials', link: 'https://angular.dev/tutorials' },
+    { title: 'CLI Docs', link: 'https://angular.dev/tools/cli' },
+    { title: 'Angular Language Service', link: 'https://angular.dev/tools/language-service' },
+    { title: 'Angular DevTools', link: 'https://angular.dev/tools/devtools' },
+  ]
+
+  delete(row: number) {
+    console.log("delete!!!");
+    this.items.splice(0);
+  }
+
+  newItem() {
+    let theItem = {"title":"bla bla ba", "link":"http://google.com"}};
+
+    //items.push({"title":"bla bla ba", "link":"http://google.com"});
+  
+  }
 }
